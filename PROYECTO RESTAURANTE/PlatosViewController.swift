@@ -66,6 +66,7 @@ UICollectionViewDelegateFlowLayout{
         return UIEdgeInsets(top: 25, left: 15, bottom: 0, right: 15)
     }
     
+    //Prueba 2
     
     func loadData (){
         platosList.append(Plato(imagen: "img1", nombre: "Arroz con Pollo", precio: "27.50"))
