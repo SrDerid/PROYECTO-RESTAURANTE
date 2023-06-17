@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -156,6 +156,8 @@
                     <navigationItem key="navigationItem" id="U1f-uZ-5Ie"/>
                     <connections>
                         <outlet property="buttonEntrar" destination="vMM-9f-nhb" id="58W-au-XBZ"/>
+                        <outlet property="textClave" destination="gxd-tN-acV" id="ad9-1X-LdX"/>
+                        <outlet property="textCorreo" destination="b62-cQ-dPr" id="2nc-gm-ARJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qSG-dH-0yg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -278,7 +280,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="IXi-Be-EvL"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Platos" id="eeB-sL-drX"/>
+                    <navigationItem key="navigationItem" title="Platos" id="eeB-sL-drX">
+                        <barButtonItem key="rightBarButtonItem" title="Añadir" image="plus" catalog="system" id="VG1-7R-KmN"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="PlatosCollection" destination="aRV-Hr-eC7" id="ghv-A2-n9Z"/>
                     </connections>
@@ -367,11 +371,12 @@
             <point key="canvasLocation" x="3611.594202898551" y="846.42857142857144"/>
         </scene>
     </scenes>
-    <color key="tintColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
     <resources>
-        <image name="arkit" catalog="system" width="128" height="128"/>
+        <image name="arkit" catalog="system" width="64" height="64"/>
         <image name="logo" width="499" height="499"/>
-        <image name="pencil" catalog="system" width="128" height="113"/>
-        <image name="pencil.and.ellipsis.rectangle" catalog="system" width="128" height="81"/>
+        <image name="pencil" catalog="system" width="64" height="56"/>
+        <image name="pencil.and.ellipsis.rectangle" catalog="system" width="64" height="40"/>
+        <image name="plus" catalog="system" width="64" height="56"/>
     </resources>
+    <color key="tintColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
 </document>
