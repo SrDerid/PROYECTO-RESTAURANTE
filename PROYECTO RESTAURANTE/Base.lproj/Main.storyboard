@@ -281,7 +281,11 @@
                         <viewLayoutGuide key="safeArea" id="IXi-Be-EvL"/>
                     </view>
                     <navigationItem key="navigationItem" title="Platos" id="eeB-sL-drX">
-                        <barButtonItem key="rightBarButtonItem" title="Añadir" image="plus" catalog="system" id="VG1-7R-KmN"/>
+                        <barButtonItem key="rightBarButtonItem" title="Añadir" image="plus" catalog="system" id="VG1-7R-KmN">
+                            <connections>
+                                <segue destination="qoL-kx-tr2" kind="show" id="AoP-oK-ceO"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="PlatosCollection" destination="aRV-Hr-eC7" id="ghv-A2-n9Z"/>
@@ -290,6 +294,67 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8GY-RF-WCX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4521.739130434783" y="846.42857142857144"/>
+        </scene>
+        <!--Agregar Plato-->
+        <scene sceneID="emE-fG-fea">
+            <objects>
+                <viewController id="p97-sU-uzt" customClass="AgregarPlatoViewController" customModule="PROYECTO_RESTAURANTE" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="LlV-HN-u7X">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Nombre :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AfD-P5-6tY">
+                                <rect key="frame" x="20" y="130" width="80" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Precio :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ia5-1E-LqH">
+                                <rect key="frame" x="20" y="230" width="65" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6Jc-Zk-c15">
+                                <rect key="frame" x="58" y="174" width="298" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="O9O-sc-mFM">
+                                <rect key="frame" x="58" y="282" width="298" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fOl-bP-fLc">
+                                <rect key="frame" x="128" y="348" width="171" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Guardar">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="guardarPlato:" destination="p97-sU-uzt" eventType="touchUpInside" id="PMS-Vf-zK5"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="XeH-WY-FUg"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Agregar Plato" id="sRI-PY-Eb2">
+                        <barButtonItem key="leftBarButtonItem" title="Back" image="return" catalog="system" id="vJR-nS-Q3E"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="nombreTextField" destination="6Jc-Zk-c15" id="c0y-Yb-dJU"/>
+                        <outlet property="precioTextField" destination="O9O-sc-mFM" id="rIN-93-NN8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Y95-Y5-dkd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6400.0000000000009" y="847.76785714285711"/>
         </scene>
         <!--Menu Tab Bar Controller-->
         <scene sceneID="coW-oQ-gz6">
@@ -370,13 +435,33 @@
             </objects>
             <point key="canvasLocation" x="3611.594202898551" y="846.42857142857144"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="XEk-zT-ohi">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="qoL-kx-tr2" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="cox-Rb-5N5"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="7g7-oD-Abx">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="p97-sU-uzt" kind="relationship" relationship="rootViewController" id="Mqg-ua-o8h"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SiM-Fi-fJD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5489.8550724637689" y="847.76785714285711"/>
+        </scene>
     </scenes>
     <resources>
         <image name="arkit" catalog="system" width="64" height="64"/>
         <image name="logo" width="499" height="499"/>
         <image name="pencil" catalog="system" width="64" height="56"/>
         <image name="pencil.and.ellipsis.rectangle" catalog="system" width="64" height="40"/>
-        <image name="plus" catalog="system" width="64" height="56"/>
+        <image name="plus" catalog="system" width="32" height="32"/>
+        <image name="return" catalog="system" width="64" height="50"/>
     </resources>
     <color key="tintColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
 </document>

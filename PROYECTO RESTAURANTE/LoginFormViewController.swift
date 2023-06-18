@@ -1,6 +1,7 @@
 import UIKit
 import FirebaseAuth
 
+
 class LoginFormViewController: UIViewController {
 
     @IBOutlet weak var buttonEntrar: UIButton!

@@ -6,6 +6,7 @@
 //  Copyright © 2023 CibertecTeam. All rights reserved.
 //
 
+import FirebaseFirestore
 import UIKit
 
 struct Plato {
@@ -18,6 +19,8 @@ struct Plato {
 
 class PlatosViewController: UIViewController , UICollectionViewDataSource,
 UICollectionViewDelegateFlowLayout{
+    
+    let database = Firestore.firestore()
 
     @IBOutlet weak var PlatosCollection: UICollectionView!
     var platosList : [Plato] = []
