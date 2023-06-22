@@ -18,6 +18,7 @@
 		723C83222A352CBF006951CC /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 723C83212A352CBF006951CC /* LoginViewController.swift */; };
 		723C83242A35363A006951CC /* LoginFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 723C83232A35363A006951CC /* LoginFormViewController.swift */; };
 		AC86AEBF2A3CE8FA0032279A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AC86AEBE2A3CE8F90032279A /* GoogleService-Info.plist */; };
+		ACA655982A43BE5B00FA60A5 /* MapaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA655972A43BE5B00FA60A5 /* MapaViewController.swift */; };
 		ACCF8CEF2A3ED077004193ED /* AgregarPlatoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCF8CEE2A3ED073004193ED /* AgregarPlatoViewController.swift */; };
 		D46CC37D2A358A69002B75F8 /* PrincipalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D46CC37C2A358A69002B75F8 /* PrincipalViewController.swift */; };
 		D46CC37F2A358FA6002B75F8 /* MenuTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D46CC37E2A358FA6002B75F8 /* MenuTabBarController.swift */; };
@@ -39,6 +40,7 @@
 		723C83212A352CBF006951CC /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		723C83232A35363A006951CC /* LoginFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginFormViewController.swift; sourceTree = "<group>"; };
 		AC86AEBE2A3CE8F90032279A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		ACA655972A43BE5B00FA60A5 /* MapaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapaViewController.swift; sourceTree = "<group>"; };
 		ACCF8CEE2A3ED073004193ED /* AgregarPlatoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgregarPlatoViewController.swift; sourceTree = "<group>"; };
 		C341D12022DA649AEF92C9B7 /* Pods_PROYECTO_RESTAURANTE.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PROYECTO_RESTAURANTE.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D46CC37C2A358A69002B75F8 /* PrincipalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrincipalViewController.swift; sourceTree = "<group>"; };
@@ -97,6 +99,7 @@
 				D46CC3822A359CAC002B75F8 /* PlatosCollectionViewCell.swift */,
 				AC86AEBE2A3CE8F90032279A /* GoogleService-Info.plist */,
 				ACCF8CEE2A3ED073004193ED /* AgregarPlatoViewController.swift */,
+				ACA655972A43BE5B00FA60A5 /* MapaViewController.swift */,
 			);
 			path = "PROYECTO RESTAURANTE";
 			sourceTree = "<group>";
@@ -235,6 +238,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				723C83242A35363A006951CC /* LoginFormViewController.swift in Sources */,
+				ACA655982A43BE5B00FA60A5 /* MapaViewController.swift in Sources */,
 				723C830F2A350F1B006951CC /* ViewController.swift in Sources */,
 				D46CC37F2A358FA6002B75F8 /* MenuTabBarController.swift in Sources */,
 				723C83152A350F1B006951CC /* PROYECTO_RESTAURANTE.xcdatamodeld in Sources */,
