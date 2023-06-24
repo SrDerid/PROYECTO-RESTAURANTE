@@ -27,7 +27,9 @@ class LoginFormViewController: UIViewController {
                 print(user.user.uid)
                 self.goToMain()
             }else{
-                //login error
+                let alertController = UIAlertController(title: "Error", message: "Se ha producido un error al iniciar sesion", preferredStyle: .alert)
+                alertController.addAction(UIAlertAction(title: "Aceptar", style: .default))
+                self.present(alertController, animated: true,completion: nil)
             }
             
         }

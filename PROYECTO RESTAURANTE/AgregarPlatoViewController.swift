@@ -15,8 +15,10 @@ class AgregarPlatoViewController: UIViewController {
     
     @IBOutlet weak var precioTextField: UITextField!
     
+    @IBOutlet weak var imagenTextField: UITextField!
+    
+    
     let db = Firestore.firestore()
-    var num: Int = 1
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,23 +26,29 @@ class AgregarPlatoViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-
+   
+    
     @IBAction func guardarPlato(_ sender: Any) {
         
         view.endEditing(true)
+        var plato = ""
         
-        
-        let plato = "plato" + String(num)
-        
-        
-        db.collection("restaurante").document(plato).setData([
-            "nombre": nombreTextField.text as Any,
-            "precio": precioTextField.text ?? "",
-            "imagen": ""
-        ])
-        
-        num += 1
-        
+       // Contar las colecciones
+       db.collection("restaurante").getDocuments { (query, error) in
+           if let error = error {
+               print("Error al obtener las colecciones \(error)")
+           } else {
+               // Obtener el número de colecciones
+               let count = query?.documents.count ?? 0
+               plato = "plato\(count + 1)"
+
+            self.db.collection("restaurante").document(plato).setData([
+                "nombre": self.nombreTextField.text as Any,
+                "precio": self.precioTextField.text ?? "",
+                "imagen": self.imagenTextField.text ?? ""
+               ])
+           }
+       }
         
         
     }
