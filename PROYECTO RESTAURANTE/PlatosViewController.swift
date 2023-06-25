@@ -82,9 +82,10 @@ UICollectionViewDelegateFlowLayout{
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         
-        let with = (collectionView.frame.width - 50) / 4
-        return CGSize(width: with, height: 215)
-    }
+        let with = (collectionView.frame.width - 100/10)
+        return CGSize(width: with, height: 180)
+        
+           }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
         

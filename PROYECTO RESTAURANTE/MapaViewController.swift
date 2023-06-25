@@ -13,7 +13,7 @@ class MapaViewController: UIViewController {
     
     @IBOutlet weak var mapView: MKMapView!
     
-    let anotacionTrujillo = CLLocationCoordinate2D(latitude: -8.111840, longitude: -79.028671)
+    let anotacionTrujillo = CLLocationCoordinate2D(latitude: -8.1165965, longitude: -79.02536)
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,8 +25,8 @@ class MapaViewController: UIViewController {
         
        let annotation = MKPointAnnotation()
        annotation.coordinate = anotacionTrujillo
-       annotation.title = "Ciudad de Trujillo"
-       annotation.subtitle = "Ciudad de la Primavera "
+       annotation.title = "Restaurante 'EL BODEGON'"
+       annotation.subtitle = "El Mejor de Trujillo"
        
        mapView.addAnnotation(annotation)
        

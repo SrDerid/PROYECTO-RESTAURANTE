@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -209,41 +209,47 @@
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="aRV-Hr-eC7">
                                 <rect key="frame" x="0.0" y="88" width="414" height="725"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="4rL-mY-lx2">
-                                    <size key="itemSize" width="332" height="379"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="15" minimumInteritemSpacing="20" id="4rL-mY-lx2">
+                                    <size key="itemSize" width="285" height="228"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="itemPlatillo" id="GZt-0w-v5M" customClass="PlatosCollectionViewCell" customModule="PROYECTO_RESTAURANTE" customModuleProvider="target">
-                                        <rect key="frame" x="64.5" y="0.0" width="285" height="394"/>
+                                        <rect key="frame" x="64.5" y="0.0" width="285" height="228"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="uL9-MU-Umb">
-                                            <rect key="frame" x="0.0" y="0.0" width="285" height="394"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="285" height="228"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="754-6t-p3a">
-                                                    <rect key="frame" x="5" y="5" width="275" height="384"/>
+                                                    <rect key="frame" x="5" y="5" width="275" height="218"/>
                                                     <subviews>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="DkE-gC-5ZB">
-                                                            <rect key="frame" x="87.5" y="0.0" width="100" height="100"/>
+                                                            <rect key="frame" x="52.5" y="0.0" width="170" height="150"/>
                                                             <constraints>
-                                                                <constraint firstAttribute="height" constant="100" id="Cdp-Pl-JY3"/>
-                                                                <constraint firstAttribute="width" constant="100" id="SSc-eX-u4I"/>
+                                                                <constraint firstAttribute="height" constant="150" id="Cdp-Pl-JY3"/>
+                                                                <constraint firstAttribute="width" constant="170" id="SSc-eX-u4I"/>
                                                             </constraints>
                                                         </imageView>
-                                                        <stackView opaque="NO" contentMode="scaleToFill" spacing="80" translatesAutoresizingMaskIntoConstraints="NO" id="ke5-lz-hZq">
-                                                            <rect key="frame" x="42.5" y="105" width="190" height="279"/>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="ke5-lz-hZq">
+                                                            <rect key="frame" x="5" y="155" width="265" height="63"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nombre" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1H6-a2-9ay">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="61.5" height="279"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="265" height="45"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" constant="45" id="9QU-gS-6hf"/>
+                                                                    </constraints>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Precio" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l9N-BU-ex7">
-                                                                    <rect key="frame" x="141.5" y="0.0" width="48.5" height="279"/>
+                                                                    <rect key="frame" x="0.0" y="50" width="265" height="13"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" constant="50" id="P0c-Zw-h1d"/>
+                                                                    </constraints>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
@@ -251,6 +257,10 @@
                                                             </subviews>
                                                         </stackView>
                                                     </subviews>
+                                                    <constraints>
+                                                        <constraint firstAttribute="trailing" secondItem="ke5-lz-hZq" secondAttribute="trailing" constant="5" id="IlX-Ql-C3M"/>
+                                                        <constraint firstItem="ke5-lz-hZq" firstAttribute="leading" secondItem="754-6t-p3a" secondAttribute="leading" constant="5" id="KVv-ff-uAP"/>
+                                                    </constraints>
                                                 </stackView>
                                             </subviews>
                                             <constraints>
@@ -260,7 +270,7 @@
                                                 <constraint firstItem="754-6t-p3a" firstAttribute="leading" secondItem="uL9-MU-Umb" secondAttribute="leading" constant="5" id="mba-LZ-cKo"/>
                                             </constraints>
                                         </collectionViewCellContentView>
-                                        <size key="customSize" width="285" height="394"/>
+                                        <size key="customSize" width="285" height="228"/>
                                         <connections>
                                             <outlet property="imagenView" destination="DkE-gC-5ZB" id="HPn-4L-XdG"/>
                                             <outlet property="nombreLabel" destination="1H6-a2-9ay" id="3RO-6E-X3L"/>
@@ -281,7 +291,7 @@
                         <viewLayoutGuide key="safeArea" id="IXi-Be-EvL"/>
                     </view>
                     <navigationItem key="navigationItem" title="Platos" id="eeB-sL-drX">
-                        <barButtonItem key="leftBarButtonItem" title="Salir" image="exclamationmark.triangle" catalog="system" id="k23-2a-4vy">
+                        <barButtonItem key="leftBarButtonItem" title="Salir" image="escape" catalog="system" id="k23-2a-4vy">
                             <connections>
                                 <action selector="cerrarSesionButton:" destination="9y6-VE-wfz" id="ux3-LP-ckO"/>
                             </connections>
@@ -298,7 +308,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8GY-RF-WCX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4626" y="899"/>
+            <point key="canvasLocation" x="4624.6376811594209" y="898.66071428571422"/>
         </scene>
         <!--Agregar Plato-->
         <scene sceneID="emE-fG-fea">
@@ -542,15 +552,15 @@
             <point key="canvasLocation" x="1747.826086956522" y="898.66071428571422"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="exclamationmark.triangle" catalog="system" width="64" height="56"/>
-        <image name="list.number" catalog="system" width="64" height="48"/>
-        <image name="logo" width="499" height="499"/>
-        <image name="mappin.slash" catalog="system" width="52" height="64"/>
-        <image name="pencil.and.outline" catalog="system" width="64" height="58"/>
-        <image name="pencil.circle" catalog="system" width="64" height="60"/>
-        <image name="plus" catalog="system" width="64" height="56"/>
-        <image name="return" catalog="system" width="64" height="50"/>
-    </resources>
     <color key="tintColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+    <resources>
+        <image name="escape" catalog="system" width="128" height="121"/>
+        <image name="list.number" catalog="system" width="128" height="97"/>
+        <image name="logo" width="499" height="499"/>
+        <image name="mappin.slash" catalog="system" width="105" height="128"/>
+        <image name="pencil.and.outline" catalog="system" width="128" height="119"/>
+        <image name="pencil.circle" catalog="system" width="128" height="121"/>
+        <image name="plus" catalog="system" width="128" height="113"/>
+        <image name="return" catalog="system" width="128" height="101"/>
+    </resources>
 </document>
