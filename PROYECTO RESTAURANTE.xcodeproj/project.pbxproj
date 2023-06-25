@@ -17,6 +17,8 @@
 		723C831A2A350F21006951CC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 723C83182A350F21006951CC /* LaunchScreen.storyboard */; };
 		723C83222A352CBF006951CC /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 723C83212A352CBF006951CC /* LoginViewController.swift */; };
 		723C83242A35363A006951CC /* LoginFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 723C83232A35363A006951CC /* LoginFormViewController.swift */; };
+		AC11698E2A47BCAD000AE579 /* CartaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC11698D2A47BCAB000AE579 /* CartaViewController.swift */; };
+		AC1169902A47BCFF000AE579 /* ComandasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC11698F2A47BCFF000AE579 /* ComandasViewController.swift */; };
 		AC86AEBF2A3CE8FA0032279A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AC86AEBE2A3CE8F90032279A /* GoogleService-Info.plist */; };
 		ACA655982A43BE5B00FA60A5 /* MapaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA655972A43BE5B00FA60A5 /* MapaViewController.swift */; };
 		ACCF8CEF2A3ED077004193ED /* AgregarPlatoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCF8CEE2A3ED073004193ED /* AgregarPlatoViewController.swift */; };
@@ -39,6 +41,8 @@
 		723C831B2A350F21006951CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		723C83212A352CBF006951CC /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		723C83232A35363A006951CC /* LoginFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginFormViewController.swift; sourceTree = "<group>"; };
+		AC11698D2A47BCAB000AE579 /* CartaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartaViewController.swift; sourceTree = "<group>"; };
+		AC11698F2A47BCFF000AE579 /* ComandasViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComandasViewController.swift; sourceTree = "<group>"; };
 		AC86AEBE2A3CE8F90032279A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		ACA655972A43BE5B00FA60A5 /* MapaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapaViewController.swift; sourceTree = "<group>"; };
 		ACCF8CEE2A3ED073004193ED /* AgregarPlatoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgregarPlatoViewController.swift; sourceTree = "<group>"; };
@@ -100,6 +104,8 @@
 				AC86AEBE2A3CE8F90032279A /* GoogleService-Info.plist */,
 				ACCF8CEE2A3ED073004193ED /* AgregarPlatoViewController.swift */,
 				ACA655972A43BE5B00FA60A5 /* MapaViewController.swift */,
+				AC11698D2A47BCAB000AE579 /* CartaViewController.swift */,
+				AC11698F2A47BCFF000AE579 /* ComandasViewController.swift */,
 			);
 			path = "PROYECTO RESTAURANTE";
 			sourceTree = "<group>";
@@ -237,7 +243,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC1169902A47BCFF000AE579 /* ComandasViewController.swift in Sources */,
 				723C83242A35363A006951CC /* LoginFormViewController.swift in Sources */,
+				AC11698E2A47BCAD000AE579 /* CartaViewController.swift in Sources */,
 				ACA655982A43BE5B00FA60A5 /* MapaViewController.swift in Sources */,
 				723C830F2A350F1B006951CC /* ViewController.swift in Sources */,
 				D46CC37F2A358FA6002B75F8 /* MenuTabBarController.swift in Sources */,
