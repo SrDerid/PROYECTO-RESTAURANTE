@@ -167,7 +167,7 @@
         <!--Comandas-->
         <scene sceneID="DIf-81-ALX">
             <objects>
-                <viewController id="X9n-8X-CJR" sceneMemberID="viewController">
+                <viewController id="X9n-8X-CJR" customClass="ComandasViewController" customModule="PROYECTO_RESTAURANTE" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="1NU-bl-b2R">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -175,7 +175,13 @@
                         <color key="tintColor" red="0.33017015709999997" green="0.30018651689999998" blue="0.1189854008" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="ZJr-1b-Ozi"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Comandas" id="tIB-ph-Xpv"/>
+                    <navigationItem key="navigationItem" title="Comandas" id="tIB-ph-Xpv">
+                        <barButtonItem key="leftBarButtonItem" title="Salir" image="escape" catalog="system" id="zeP-4b-lWw">
+                            <connections>
+                                <action selector="cerrarSesion:" destination="X9n-8X-CJR" id="Faj-gq-Fhl"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lkl-p2-wMX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -184,7 +190,7 @@
         <!--Carta-->
         <scene sceneID="GdV-gr-Nky">
             <objects>
-                <viewController id="R4W-vS-RQh" sceneMemberID="viewController">
+                <viewController id="R4W-vS-RQh" customClass="CartaViewController" customModule="PROYECTO_RESTAURANTE" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="QKC-GM-f8T">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -192,7 +198,13 @@
                         <color key="tintColor" red="0.33017015709999997" green="0.30018651689999998" blue="0.1189854008" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="uov-Kx-VRq"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Carta" id="7vd-4p-J1S"/>
+                    <navigationItem key="navigationItem" title="Carta" id="7vd-4p-J1S">
+                        <barButtonItem key="leftBarButtonItem" title="Salir" image="escape" catalog="system" id="VoV-hf-eNH">
+                            <connections>
+                                <action selector="cerrarSesion:" destination="R4W-vS-RQh" id="50d-0P-3E1"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vYZ-zw-Ohy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -300,10 +312,10 @@
             </objects>
             <point key="canvasLocation" x="4626" y="899"/>
         </scene>
-        <!--Agregar Plato-->
+        <!--Nuevo Plato-->
         <scene sceneID="emE-fG-fea">
             <objects>
-                <viewController id="p97-sU-uzt" customClass="AgregarPlatoViewController" customModule="PROYECTO_RESTAURANTE" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="p97-sU-uzt" customClass="AgregarPlatoViewController" customModule="PROYECTO_RESTAURANTE" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="LlV-HN-u7X">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -374,12 +386,8 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="XeH-WY-FUg"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Agregar Plato" id="sRI-PY-Eb2">
-                        <barButtonItem key="leftBarButtonItem" title="Back" image="return" catalog="system" id="vJR-nS-Q3E">
-                            <connections>
-                                <action selector="regresarAction:" destination="p97-sU-uzt" id="15g-N1-qms"/>
-                            </connections>
-                        </barButtonItem>
+                    <navigationItem key="navigationItem" title="Nuevo Plato" id="s6E-KO-AeS">
+                        <barButtonItem key="leftBarButtonItem" title="Back" image="return" catalog="system" id="Ndd-nU-08d"/>
                     </navigationItem>
                     <connections>
                         <outlet property="imagenTextField" destination="IbS-Ga-fnQ" id="jDi-qx-cNG"/>
@@ -543,6 +551,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="escape" catalog="system" width="64" height="60"/>
         <image name="exclamationmark.triangle" catalog="system" width="64" height="56"/>
         <image name="list.number" catalog="system" width="64" height="48"/>
         <image name="logo" width="499" height="499"/>
